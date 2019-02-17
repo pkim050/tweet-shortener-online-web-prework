@@ -18,5 +18,5 @@ def word_substituter(string)
   arr = string.split
   puts arr
   #arr.each do |i|
-    #if i == dictionary.keys
+    #if i == dictiona
 end
