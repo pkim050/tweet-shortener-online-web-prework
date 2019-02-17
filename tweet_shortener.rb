@@ -25,3 +25,24 @@ def word_substituter(string)
   arr.join(" ")
   arr
 end
+
+def bulk_tweet_shortner(array)
+  array.each {|i| puts word_substituter(i)}
+end
+
+def selective_tweet_shortener(string)
+  if string.size > 140
+    word_substituter(string)
+  else
+    string
+  end
+end
+
+def shortened_tweet_truncator(string)
+  if string.size > 140
+    word_substituter(string)
+    string[0..136] + "..."
+  else
+    string
+  end
+end
