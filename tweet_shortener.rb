@@ -16,16 +16,15 @@ def dictionary
 end
 
 def word_substituter(string)
-  arr = []
   arr = string.split(" ")
-  #binding.pry
-  arr.each_with_index do |x, i|
-    dictionary.each do |k, v|
-      x[i] = v if x.downcase == k
+  arr2 = arr.collect do |i|
+    if dictionary.keys.include?(i.downcase)
+      dictionary[i.downcase]
+    else
+      i
     end
   end
-  arr.join(" ")
-  arr
+  arr2.join(" ")
 end
 
 def bulk_tweet_shortner(array)
