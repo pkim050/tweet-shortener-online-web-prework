@@ -1,3 +1,4 @@
+require 'pry'
 # Write your code here.
 def dictionary
 {
@@ -16,6 +17,7 @@ end
 
 def word_substituter(string)
   arr = string.split(" ")
+  binding.pry
   arr.each_with_index do |x, i|
     dictionary.each do |k, v|
       x[i] = v if x.downcase == k
