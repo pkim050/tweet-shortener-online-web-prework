@@ -15,3 +15,4 @@ def word_substituter(string)
   puts arr
   #arr.each do |i|
     #if i == dictionary.keys
+end
