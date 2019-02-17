@@ -18,7 +18,7 @@ end
 def word_substituter(string)
   arr = []
   arr = string.split(" ")
-  binding.pry
+  #binding.pry
   arr.each_with_index do |x, i|
     dictionary.each do |k, v|
       x[i] = v if x.downcase == k
