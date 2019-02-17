@@ -16,6 +16,7 @@ def dictionary
 end
 
 def word_substituter(string)
+  arr = []
   arr = string.split(" ")
   binding.pry
   arr.each_with_index do |x, i|
