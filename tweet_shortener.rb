@@ -12,5 +12,6 @@ end
 
 def word_substituter(string)
   arr = string.split
-  arr.each do |i|
-    if i == dictionary.keys
+  puts arr
+  #arr.each do |i|
+    #if i == dictionary.keys
